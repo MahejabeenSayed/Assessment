@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
+
+/* 
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #f5f5f5 !important;
+  min-height: 100vh;
+  display: flex;
+  font-weight: 400;
+  font-family:'Montserrat', 'Fira Sans', sans-serif;
+  margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6,label,span {
+  font-weight: 500;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+body, html, .App, #root, .auth-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-light {
+  background-color: #ffffff;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+}
+
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+}
+
+.auth-inner {
+  width: 450px;
+  margin: auto;
+  background : #FFFFFF 0% 0% no-repeat padding-box;;
+  box-shadow: 0px 3px 6px #00000029;
+  padding: 24px;
+  border-radius: 15px;
+  transition: all .3s;
+  color: #537178;
+  font-family:'Montserrat' !important;
+}
+
+.auth-wrapper .form-control:focus {
+  border-color: #cacdd1;
+  box-shadow: none;
+}
+
+.auth-wrapper h3 {
+  margin: 0;
+  line-height: 1;
+  padding-bottom: 20px;
+  font-size: 24px;
+  font-family: 'Montserrat';
+  font-weight: 500;
+}
+
+.custom-control-label {
+  font-weight: 400;
+}
+
+.LoginForm .form-control .MuiInput-underline{
+  background: #EEF1F8 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  opacity: 1;
+  height: 40px;
+  margin-top: 12px;
+  padding-left: 16px;
+}
+
+
+.LoginForm .form-control .MuiInput-underline:before {
+  border: none;
+}
+.LoginForm .form-control .btn-block{
+  height: 40px;
+background: #5285EC 0% 0% no-repeat padding-box;
+border-radius: 8px;
+margin-top: 12px;
+}
+
+.forgot-password,
+.forgot-password a {
+  text-align: right;
+  font-size: 13px;
+  padding-top: 10px;
+  color: #7f7d7d;
+  margin: 0;
+}
+
+.forgot-password a {
+  color: #167bff;
+}
+
+/* Dashboard */
+.info-card.MuiCard-root {
+  width: 100%;
+  align-self: center;
+  margin: auto;
+  border-radius: 15px;
+  text-align: left;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #0000000A;
+  border-radius: 12px;
+font-family: 'Montserrat', 'Open Sans', 'Helvetica Neue', sans-serif;
+color: #6c757d;
+min-height: 200px;
+max-height: 200px;
+padding: 8px;
+
+
+.MuiCardHeader-content .MuiTypography-h5{
+  color: #6c757d;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+}
+
+.card-text {
+  & span{
+    color: #6c757d;
+  }
+  .large-num {
+    font-size: 60px;
+    color: blue;
+  }
+ 
+}
+
+.MuiCardContent-root ul {
+  padding-left: 24px;
+  color: #6c757d;
+  margin: 0;
+}
+}
+
+.tasklist-table{
+  th {
+    color: #5285EC;
+    font-size: 24px;
+  }
+}
+
+#standard-basic {
+  height: 40px;
+background: #EEF1F8 0% 0% no-repeat padding-box;
+border-radius: 8px;
+padding-left: 12px;
+}
+.newTask {
+  height: 40px;
+background: #5285EC 0% 0% no-repeat padding-box;
+border-radius: 8px; 
+}
+
+.MuiInput-underline:before {
+  border: none !important;
+}
+
+.LoginForm .form-control {
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+}
+.LoginForm .form-control .MuiInput-underline:hover:not(.Mui-disabled):before{
+  border: none;
+}
+
+#modal-modal-title{
+  text-align: left;
+font: normal normal medium 20px/28px Montserrat;
+letter-spacing: 0px;
+color: #537178;
+font-size: 24px;
+}
+
+.addNewTask{
+  width: 124px;
+height: 40px;
+background: #5285EC 0% 0% no-repeat padding-box;
+border-radius: 8px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .auth-inner{
+    width: 296px;
+  } 
+}
