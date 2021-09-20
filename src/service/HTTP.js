@@ -1,8 +1,6 @@
-import { useHistory } from 'react-router';
 import defaultAPIClient from './client';
 
 function callApi(endpoint, method, body, { APIClient = defaultAPIClient } = {}) {
-  const history = useHistory()
   APIClient.defaults.headers['Authorization'] = "Bearer " + sessionStorage.getItem('react-token');
   return APIClient[method](endpoint, body)
     .then(response => {
@@ -15,7 +13,6 @@ function callApi(endpoint, method, body, { APIClient = defaultAPIClient } = {}) 
           responded with a status code that falls out of the range of 2xx (i.e. 3xx and 4xx etc.)
         */
         if (error.response.status === 401) {
-          history.push('/sign-in')    
           return {
             success: false,
             errors: { data: { message: "Please, Login to authenticate your self." } }
